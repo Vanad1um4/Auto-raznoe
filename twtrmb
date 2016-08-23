@@ -1,0 +1,22 @@
+// ==UserScript==
+// @name         Little twitter helper
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://twitter.com/mentions
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+function after(ms, fn){ setTimeout(fn, ms); }
+
+after(100, function(){
+    document.getElementsByTagName("data-time")[0].click();
+});
+
+
+
+})();
