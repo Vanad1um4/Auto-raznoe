@@ -17,6 +17,6 @@ after(100, function(){
     document.getElementsByTagName("data-time")[0].click();
 });
 
-
+document.getElementsByClassName('js-stream-item stream-item stream-item')[1].getAttribute('data-item-id')
 
 })();
